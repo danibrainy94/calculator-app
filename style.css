@@ -1,0 +1,93 @@
+*{
+    font-family: 'Bruno Ace SC', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 50px 10%;
+    background: whitesmoke;
+    
+}
+
+.outer-container {
+    width: 350px;
+    height: 40%;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 40px #bebebe, -20px -20px 40px #ffffff;
+    outline: 10px solid #E4BE9E;
+
+    
+}
+
+.display-section {
+    background: #E4BE9E;
+    border: 10px solid #E4BE9E;
+}
+
+.display-screen {
+    width: 100%;
+    height: 140px;
+    background: #fcfcfc;
+    border-radius: 20px 20px 7px 7px; 
+    text-align: right;
+    font-size: 3.5rem;
+    color: #E4BE9E;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    outline: 3px solid #E4BE9E;
+    
+}
+
+
+table {
+    border-spacing: 15px;
+}
+
+tr {
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 70px;
+    height: 75px;
+    border: 1px #bebebe ;
+    border-radius: 79px;
+    background: #fcfcfc;
+    box-shadow: 24px 24px 47px #d6d6d6, -24px -24px 47px #ffffff;
+    font-size: 1.5rem;
+    
+}
+
+.function-btn {
+    background: #E4BE9E;
+}
+
+.memory-btn {
+    background: #ABA361;
+}
+
+input:active {
+    
+    background: #2F0601;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition-duration: 1.5s;
+}
+
+.function-btn:focus, .memory-btn:focus, input:focus {
+    background: #2F0601;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    transition-duration: .20s;
+    animation-duration: .20s;
+}
+
+.display-screen:focus {
+    background: #f2eff0;
+    color: #3C0802;
+    transition-duration: .20s;
+    animation-duration: .20s;
+}
+
