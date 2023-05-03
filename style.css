@@ -4,8 +4,11 @@
 }
 
 body{
-    margin: 50px 10%;
+    margin: 100px 10%;
     background: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -62,10 +65,12 @@ input {
 
 .function-btn {
     background: #E4BE9E;
+    font-size: 1.25rem;
 }
 
 .memory-btn {
     background: #ABA361;
+    font-size: 1.25rem;
 }
 
 input:active {

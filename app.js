@@ -9,12 +9,48 @@ function screenClear() {
     document.getElementById("display").value = "";
 }
 
-// calculating and reurning results
+// calculating basic arithmetic functions and reurning results
 
 function calc() {
-    var a = document.getElementById("display").value;
+    let a = document.getElementById("display").value;
 
-    //evaluating the values inputs on the display screen
-    var b = eval(a);
+    //evaluating the values inputs on the display screen 
+    let b = eval(a);
     document.getElementById("display").value = b;
+    }
+
+// calculating the sin of a number
+function calc_sin(){
+    let c = document.getElementById("display").value;
+
+    let f = Math.sin(c);
+    document.getElementById("display").value = f;
+    
+}
+
+//calculating the cos of a number
+function calc_cos(){
+    let c = document.getElementById("display").value;
+
+    let f = Math.cos(c);
+    document.getElementById("display").value = f;
+    
+}
+
+//calculating the tan of a number
+function calc_tan(){
+    let c = document.getElementById("display").value;
+
+    let f = Math.tan(c);
+    document.getElementById("display").value = f;
+    
+}
+
+//calculating the square root of a number
+function calc_root(){
+    let c = document.getElementById("display").value;
+
+    let f = Math.sqrt(c);
+    document.getElementById("display").value = f;
+    
 }

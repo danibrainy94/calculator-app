@@ -15,7 +15,7 @@
     <div class="outer-container">
         <div class="main-container">
             <div class="display-section">
-                <input type="text" class="display-screen" id="display" value="">
+                <input type="text" class="display-screen" placeholder="0" id="display" value="">
             </div>
 
             <div class="calc-buttons">
@@ -24,31 +24,45 @@
 
                     <tr>
                         <td> <input id="btn-clear" class="memory-btn" type="button" value="AC" onclick="screenClear()"> </td>
-                        <td> <input id="btn-negative" class="function-btn" type="button" value="+/-" onclick="display('-')"> </td>
-                        <td> <input id="btn-percent" class="function-btn" type="button" value="%" onclick="display('%')"> </td>
-                        <td> <input id="btn-multiply" class="function-btn" type="button" value="X" onclick="display('*')"> </td>
+                        <td> <input id="btn-sin" class="function-btn" type="button" value="sin" onclick="calc_sin()"> </td>
+                        <td> <input id="btn-cos" class="function-btn" type="button" value="cos" onclick="calc_cos()"> </td>
+                        <td> <input id="btn-tan" class="function-btn" type="button" value="tan" onclick="calc_tan()"> </td>
+                        <td> <input id="btn-root" class="function-btn" type="button" value="&#8730" onclick="calc_root()"> </td>
                     </tr>
+                    <tr>
+                        <td> <input id="btn-multiply" class="function-btn" type="button" value="(" onclick="display('(')"> </td>
+                        <td> <input id="btn-divide" class="function-btn" type="button" value=")" onclick="display(')')"> </td>
+                        <td> <input id="btn-multiply" class="function-btn" type="button" value="log" onclick="display('log')"> </td>
+                        <td> <input id="btn-divide" class="function-btn" type="button" value="" onclick="display('/')"> </td>
+                        <td> <input id="btn-divide" class="function-btn" type="button" value="/" onclick="display('/')"> </td>
+                    </tr>
+
+
                     <tr>
                         <td> <input id="btn-1" type="button" value="1" onclick="display('1')"> </td>
                         <td> <input id="btn-2" type="button" value="2" onclick="display('2')"> </td>
                         <td> <input id="btn-3" type="button" value="3" onclick="display('3')"> </td>
+                        <td> <input id="btn-multiply" class="function-btn" type="button" value="X" onclick="display('*')"> </td>
                         <td> <input id="btn-divide" class="function-btn" type="button" value="/" onclick="display('/')"> </td>
                     </tr>
                     <tr>
                         <td> <input id="btn-4" type="button" value="4" onclick="display('4')"> </td>
                         <td> <input id="btn-5" type="button" value="5" onclick="display('5')"> </td>
                         <td> <input id="btn-6" type="button" value="6" onclick="display('6')"> </td>
+                        <td> <input id="btn-plus" class="function-btn" type="button" value="+" onclick="display('+')"> </td>
                         <td> <input id="btn-minus" class="function-btn" type="button" value="-" onclick="display('-')"> </td>
                     </tr>
                     <tr>
                         <td> <input id="btn-7" type="button" value="7" onclick="display('7')"> </td>
                         <td> <input id="btn-8" type="button" value="8" onclick="display('8')"> </td>
                         <td> <input id="btn-9" type="button" value="9" onclick="display('9')"> </td>
-                        <td> <input id="btn-plus" class="function-btn" type="button" value="+" onclick="display('+')"> </td>
+                        <td> <input id="btn-minus" class="function-btn" type="button" value="&#37" onclick="display('%')"> </td>
+                        <td> <input id="btn-plus" class="function-btn" type="button" value="&#177" onclick="display('-')"> </td>
                     </tr>
                     <tr>
                         <td> <input id="btn-decimal" type="button" value="." onclick="display('.')"> </td>
                         <td> <input id="btn-zero" type="button" value="0" onclick="display('0')"> </td>
+                        <td> <input id="btn-zero" type="button" value="**" onclick="display('^')"> </td>
                         <td> <input id="btn-memoryAdd" class="memory-btn" type="button" value="MR" onclick="display('MR')"> </td>
                         <td> <input id="btn-equal" class="function-btn" type="button" value="=" onclick="calc()"> </td>
                     </tr>
