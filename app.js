@@ -23,7 +23,8 @@ function calc() {
 function calc_sin(){
     let c = document.getElementById("display").value;
 
-    let f = Math.sin(c);
+    let f = Math.sin(c); 
+    f * Math.PI/180;
     document.getElementById("display").value = f;
     
 }
@@ -53,4 +54,20 @@ function calc_root(){
     let f = Math.sqrt(c);
     document.getElementById("display").value = f;
     
+}
+
+// getting the square of a number
+function num_squared() {
+    let c = document.getElementById("display").value;
+    
+    let f = Math.pow(c, 2);
+    document.getElementById("display").value = f;
+}
+
+// getting the natural logarithm of a number
+function num_log() {
+    let c = document.getElementById("display").value;
+    
+    let f = Math.log(c);
+    document.getElementById("display").value = f;
 }

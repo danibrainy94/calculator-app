@@ -77,17 +77,10 @@ input:active {
     
     background: #2F0601;
     color: #ffffff;
-    border: 2px solid #ffffff;
+    outline: 2px solid black;
     transition-duration: 1.5s;
 }
 
-.function-btn:focus, .memory-btn:focus, input:focus {
-    background: #2F0601;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    transition-duration: .20s;
-    animation-duration: .20s;
-}
 
 .display-screen:focus {
     background: #f2eff0;
@@ -96,3 +89,6 @@ input:active {
     animation-duration: .20s;
 }
 
+#btn-equal {
+    width: 120px;
+}
